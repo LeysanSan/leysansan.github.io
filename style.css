@@ -1,0 +1,268 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f8fa;
+    color: #201f1f;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.header-text h2 {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #212020;
+}
+
+
+.hero {
+    width: 100%;
+    min-height: 400px;
+    background: url("openart-image_9Ti3GUh2_1749049402349_raw.jpg") no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(192, 190, 190, 0.577);
+    z-index: 1;
+}
+
+.hero::after {
+    content: "";
+    display: block;
+    position: absolute;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #201f1f;
+    z-index: 2;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.hero-text:hover {
+    transform: translate(-50%, -60%);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #747373;
+}
+
+.hero h2 {
+    color: #fff8f8;
+}
+
+.content {
+    width: 80%;
+    max-width: 1200px;
+    margin: 40px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.box {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow:
+        8px 8px 16px #d9d9d9,
+        /* darker shadow */
+        -8px -8px 16px #ffffff;
+    /* lighter highlight */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow:
+        4px 4px 8px #d9d9d9,
+        -4px -4px 8px #ffffff;
+}
+
+.box img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.box h3 {
+    margin-top: 15px;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.box p {
+    color: #666;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.cta {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d36b7b;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow:
+        inset 2px 2px 5px #b35562,
+        inset -2px -2px 5px #ef7f8d;
+    transition: all 0.3s ease;
+}
+
+.cta:hover {
+    background-color: #b35562;
+    box-shadow:
+        inset 1px 1px 2px #9d454f,
+        inset -1px -1px 2px #f592a2;
+}
+
+.cta-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.contact {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.contact h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    margin: 20px 0;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+}
+
+.linkedin {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url("https://img.icons8.com/?size=100&id=IuI5Yd3J3qcC&format=png&color=000000");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease, background-image 0.3s ease;
+}
+
+.linkedin:hover {
+    transform: translateY(-5px);
+    background-image: url("https://img.icons8.com/?size=100&id=NTCUeTIie8CC&format=png&color=000000");
+    /* hover icon */
+}
+
+.gmail {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url("https://toppng.com/uploads/preview/gmail-logo-png-116598232102vhi5hzcp3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease, background-image 0.3s ease;
+}
+
+
+.gmail:hover {
+    transform: translateY(-5px);
+
+    background-image: url("https://cdn2.iconfinder.com/data/icons/mobile-web-app-vol-4/32/Email_Open_message_chat_letter_envelope_conversation_gmail-1024.png");
+}
+
+.github {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url("https://toppng.com/uploads/preview/gmail-logo-png-116598232102vhi5hzcp3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease, background-image 0.3s ease;
+}
+
+
+.github:hover {
+    transform: translateY(-5px);
+
+    background-image: url("https://www.pngplay.com/wp-content/uploads/12/GitHub-Background-PNG-Clip-Art.png");
+}
+
+footer {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    color: #777;
+    font-size: 0.9em;
+}
+
+/*
+.img-chat img {
+    visibility: visible;
+    transition: visibility 0.3s ease;
+}
+
+.img-chat:hover img {
+    visibility: hidden;
+}*/
