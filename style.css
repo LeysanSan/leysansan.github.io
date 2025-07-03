@@ -28,7 +28,7 @@ header {
 .hero {
     width: 100%;
     min-height: 400px;
-    background: url("openart-image_9Ti3GUh2_1749049402349_raw.jpg") no-repeat center center;
+    background: url("./images/openart-image_9Ti3GUh2_1749049402349_raw.jpg") no-repeat center center;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -196,7 +196,7 @@ h2 {
     display: inline-block;
     width: 40px;
     height: 40px;
-    background-image: url("https://img.icons8.com/?size=100&id=IuI5Yd3J3qcC&format=png&color=000000");
+    background-image: url("./images/linkedin_black.png");
     background-size: cover;
     background-repeat: no-repeat;
     transition: transform 0.3s ease, background-image 0.3s ease;
@@ -204,15 +204,14 @@ h2 {
 
 .linkedin:hover {
     transform: translateY(-5px);
-    background-image: url("https://img.icons8.com/?size=100&id=NTCUeTIie8CC&format=png&color=000000");
-    /* hover icon */
+    background-image: url("./images/linkedin_white.png");
 }
 
 .gmail {
     display: inline-block;
     width: 40px;
     height: 40px;
-    background-image: url("https://toppng.com/uploads/preview/gmail-logo-png-116598232102vhi5hzcp3.png");
+    background-image: url("./images/gmail_closed.png");
     background-size: cover;
     background-repeat: no-repeat;
     transition: transform 0.3s ease, background-image 0.3s ease;
@@ -222,14 +221,14 @@ h2 {
 .gmail:hover {
     transform: translateY(-5px);
 
-    background-image: url("https://cdn2.iconfinder.com/data/icons/mobile-web-app-vol-4/32/Email_Open_message_chat_letter_envelope_conversation_gmail-1024.png");
+    background-image: url("./images/gmail_opened.png");
 }
 
 .github {
     display: inline-block;
     width: 40px;
     height: 40px;
-    background-image: url("https://toppng.com/uploads/preview/gmail-logo-png-116598232102vhi5hzcp3.png");
+    background-image: url("./images/github_black.png");
     background-size: cover;
     background-repeat: no-repeat;
     transition: transform 0.3s ease, background-image 0.3s ease;
@@ -239,7 +238,7 @@ h2 {
 .github:hover {
     transform: translateY(-5px);
 
-    background-image: url("https://www.pngplay.com/wp-content/uploads/12/GitHub-Background-PNG-Clip-Art.png");
+    background-image: url("./images/github_white.png");
 }
 
 footer {
